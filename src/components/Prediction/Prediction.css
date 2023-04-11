@@ -1,0 +1,23 @@
+.predictionParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.prediction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #09d3ac;
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+    font-size: 200px;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}

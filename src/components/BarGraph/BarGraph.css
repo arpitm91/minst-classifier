@@ -1,0 +1,42 @@
+.barGraphParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.graphEntry {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.graphBarFilled {
+    background-color: #09d3ac;
+    height: 100%;
+}
+
+.graphBarEmpty {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.graphLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    flex-grow: 0;
+    font-family: 'Consolas';
+}
+
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 280px;
+    height: 280px;
+    background-color: #09d3ac11;
+    border-radius: 10px;
+    overflow: hidden;
+}

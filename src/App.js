@@ -27,7 +27,7 @@ class App extends React.Component {
   componentDidMount() {
     if (!this.state.loading) {
       this.setState({ loading: true });
-      tf.loadLayersModel('./trainedModel/model.json').then(model => {
+      tf.loadLayersModel('./classifier/model.json').then(model => {
         this.setState({ model })
       });
     }

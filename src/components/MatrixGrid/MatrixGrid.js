@@ -6,7 +6,7 @@ class MatrixGrid extends Component {
   render() {
     return (
       <div className='matrixParent'>
-        <h4>Input to the model</h4>
+        <h4>{this.props.title ?? ""}</h4>
         <div className="matrix-grid-container">
           {this.props.matrix.map((row, rowIndex) =>
             row.map((value, colIndex) => (

@@ -1,0 +1,26 @@
+.section-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section-container {
+    width: 100%;
+    display: flex;
+}
+
+.section {
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.section>h2 {
+    margin: 0px;
+    text-decoration: underline;
+    width: 100%;
+}

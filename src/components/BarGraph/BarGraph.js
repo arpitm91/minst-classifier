@@ -2,8 +2,6 @@ import './BarGraph.css';
 import React from 'react';
 
 const BarGraph = ({ data }) => {
-  const barWidth = 100;
-
   const bars = data.map((value, index) => (
     <div
       key={index}

@@ -3,14 +3,13 @@ import './App.css';
 import * as tf from '@tensorflow/tfjs';
 import React from 'react';
 import Canvas from './components/Canvas/Canvas';
-import InputGrid from './components/InputGrid/InputGrid';
-import MultipleMatrixGrid from './components/MultipleMatrixGrid/MultipleMatrixGrid';
+import MultipleMatrixCanvas from './components/MultipleMatrixCanvas/MultipleMatrixCanvas';
 import BarGraph from './components/BarGraph/BarGraph';
 import Prediction from './components/Prediction/Prediction';
 import Section from './components/Section/Section';
 import NumbersGrid from './components/NumbersGrid/NumbersGrid';
 
-const OUTPUTS = 1;
+const OUTPUTS = 3;
 
 
 class App extends React.Component {
@@ -86,14 +85,14 @@ class App extends React.Component {
         </div>
         <Section name="Classification">
           <Canvas sendMatrix={this.onClassifierMatrixChange} />
-          <InputGrid matrix={this.state.classifierInput} title="Input to the model" />
+          <MultipleMatrixCanvas matrix={[this.state.classifierInput]} length={1} title="Input to the model" />
           <BarGraph data={this.state.classifierClassification} />
           <Prediction prediction={this.state.classifierPrediction} />
         </Section>
         <hr style={{ width: "100%" }} color='#09d3ac'></hr>
         <Section name="Conditional GAN Generation">
           <NumbersGrid onNumberSelect={this.onGenerateNumber} />
-          <MultipleMatrixGrid matrix={this.state.cganGeneratorOutputs} length={OUTPUTS} title="Outputs" />
+          <MultipleMatrixCanvas matrix={this.state.cganGeneratorOutputs} length={OUTPUTS} title="Outputs" />
         </Section>
       </div >
     );

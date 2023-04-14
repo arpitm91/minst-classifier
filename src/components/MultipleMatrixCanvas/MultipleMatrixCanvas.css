@@ -1,0 +1,13 @@
+.matrixParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.matrixCanvas {
+    border: 1px solid #09d3ac;
+    border-radius: 10px;
+    image-rendering: pixelated;
+}

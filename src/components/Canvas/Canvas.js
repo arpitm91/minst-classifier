@@ -30,6 +30,8 @@ class Canvas extends React.Component {
     const { context } = this.state;
     context.beginPath();
     context.moveTo(offsetX, offsetY);
+    context.lineTo(offsetX, offsetY);
+    context.stroke();
     this.setState({ isDrawing: true });
   };
 

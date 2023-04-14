@@ -33,6 +33,17 @@ class App extends React.Component {
     };
   }
 
+  resetClassification = () => {
+    const classifierPrediction = "X";
+    const classifierInput = new Array(28).fill(0).map(() => new Array(28).fill([0]));
+    const classifierClassification = new Array(10).fill(0)
+    this.setState({
+      classifierPrediction,
+      classifierInput,
+      classifierClassification
+    })
+  }
+
   componentDidMount() {
     if (!this.state.loading) {
       this.setState({ loading: true });
@@ -84,7 +95,7 @@ class App extends React.Component {
           <h4>Created by Arpit Mathur</h4>
         </div>
         <Section name="Classification">
-          <Canvas sendMatrix={this.onClassifierMatrixChange} />
+          <Canvas sendMatrix={this.onClassifierMatrixChange} onClear={this.resetClassification} />
           <MultipleMatrixCanvas matrix={[this.state.classifierInput]} length={1} title="Input to the model" />
           <BarGraph data={this.state.classifierClassification} />
           <Prediction prediction={this.state.classifierPrediction} />

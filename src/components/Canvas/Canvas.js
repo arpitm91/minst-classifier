@@ -55,7 +55,7 @@ class Canvas extends React.Component {
     context.clearRect(0, 0, this.canvasRef.current.width, this.canvasRef.current.height);
     context.fillStyle = "white";
     context.fillRect(0, 0, this.canvasRef.current.width, this.canvasRef.current.height);
-    this.convertToMatrix()
+    this.props.onClear();
   };
 
   convertToMatrix = () => {

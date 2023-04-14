@@ -33,6 +33,7 @@ class Canvas extends React.Component {
     context.lineTo(offsetX, offsetY);
     context.stroke();
     this.setState({ isDrawing: true });
+    this.convertToMatrix()
   };
 
   draw = (e) => {

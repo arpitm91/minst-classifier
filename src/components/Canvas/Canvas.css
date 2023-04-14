@@ -10,11 +10,6 @@
     margin-top: 20px;
 }
 
-.center {
-    width: 100%;
-    text-align: center;
-}
-
 .canvas {
     border: 1px solid #09d3ac;
     border-radius: 10px;

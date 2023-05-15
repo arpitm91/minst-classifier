@@ -1,6 +1,7 @@
 {
   "name": "minst",
   "version": "1.0.0",
+  "homepage": "https://arpitm91.github.io/minst-classifier",
   "private": true,
   "dependencies": {
     "@tensorflow/tfjs": "^4.4.0",

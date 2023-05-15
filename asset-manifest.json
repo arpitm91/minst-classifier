@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/minst-classifier/static/css/main.12e5760b.css",
-    "main.js": "/minst-classifier/static/js/main.23ea38b1.js",
+    "main.js": "/minst-classifier/static/js/main.c1f05015.js",
     "index.html": "/minst-classifier/index.html",
     "main.12e5760b.css.map": "/minst-classifier/static/css/main.12e5760b.css.map",
-    "main.23ea38b1.js.map": "/minst-classifier/static/js/main.23ea38b1.js.map"
+    "main.c1f05015.js.map": "/minst-classifier/static/js/main.c1f05015.js.map"
   },
   "entrypoints": [
     "static/css/main.12e5760b.css",
-    "static/js/main.23ea38b1.js"
+    "static/js/main.c1f05015.js"
   ]
 }

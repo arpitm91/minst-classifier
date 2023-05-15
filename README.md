@@ -9,6 +9,8 @@ We already have a trained model in [this folder](public/classifier). It was trai
 Recomended node version `v16.17.1`
 Recomended npm version: `8.15.0`
 
+Dont forget to ***remove homepage from [package.json](https://github.com/arpitm91/minst-classifier/blob/347caecda566752796f886d274cac0a724d36659/package.json#L4)*** for local development.
+
 ```
 npm install
 npm start
